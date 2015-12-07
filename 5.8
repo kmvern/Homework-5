@@ -1,0 +1,89 @@
+Jezebel bare Pu sphere with graphit shell
+c
+c      ------------------------- START CARDS ---------------------------
+c
+c      -----------
+c      cell cards
+c      -----------
+c
+c      ---
+100    1 4.0290E-02       -10       imp:n=1       $plutonium sphere
+c      ---
+101    2 -1.67        10 -11   imp:n=1       $graphite shell
+c      ---
+c
+c      ---
+150    0                   11       imp:n=0        $void
+c      ---
+c
+c      -----------
+c      end cell cards
+c      -----------
+
+c      -----------
+c      surface cards
+c      -----------
+c
+c      ---
+c      geometry
+c      ---
+10     SPH  6.15     $plutonium sphere
+c      ---
+11     SPH  6.25     $graphite shell
+c      ---
+c      end source geometry
+c      ---
+c
+c      -----------
+c      end surface cards
+c      -----------
+
+c      -----------
+c      data cards
+c      -----------
+c
+c      ---
+MODE   n
+c      ---
+c
+c      ---
+c      end physics
+c      ---
+c
+c      ---
+c      source
+c      ---
+c
+c      ---
+KCODE  5000 1.0 50 250
+KSRC   0 0 0
+c      ---
+c
+c      ---
+c      end source
+c      ---
+c
+c      ---
+c      materials
+c      ---
+c
+c      ---
+c      plutonium
+M1     94239.66c 3.7073e-2 
+       94240.66c 1.7510E-03 
+c      ---
+c
+c      ---
+c      graphite
+M2 6012. -99.5 26000. -.34 16032. -.16 
+MT2 GRPH.01T
+c      ---                             
+c
+c      ---
+c      end materials
+c      ---
+c
+c      ----------- END CARDS -----------
+c
+c      -----------------------------------------------------------------
+
