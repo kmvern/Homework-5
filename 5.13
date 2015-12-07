@@ -1,0 +1,16 @@
+Uranium cylinder 10.9
+1 1 -18.63 -1 2 -3 IMP:N=1
+2 0 -4 #1 IMP:N=1
+3 0 4 IMP:N=0 $outside of cylinder
+
+1 CY 26.85
+2 PY 0
+3 PY 120
+4 SO 130
+
+M1 92235 -10.9 92238 -89.1
+KCODE 9000 1 25 90
+SDEF AXS 0 1 0 POS 0 60 0 EXT D1 RAD D2
+SI1 55
+SI2 .1 26
+PRINT
